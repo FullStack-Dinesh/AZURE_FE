@@ -115,11 +115,7 @@ function App() {
       <header className="app-header">
         <h1>Document AI Assistant</h1>
       </header>
-      {answer && (
-  <div className="answer-display">
-    <strong>Answer:</strong> {answer}
-  </div>
-)}
+      
       <UploadSection
         file={file}
         onFileChange={handleFileChange}
