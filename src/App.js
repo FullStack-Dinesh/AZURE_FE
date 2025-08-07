@@ -125,7 +125,7 @@ function App() {
       />
       
       <ChatSection messages={messages} />
-      
+      {answer}
       <QuerySection
         query={query}
         onQueryChange={setQuery}
