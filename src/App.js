@@ -10,7 +10,7 @@ function App() {
   const [file, setFile] = useState([]);
   const [uploadMessage, setUploadMessage] = useState('');
   const [query, setQuery] = useState('');
-  const [setAnswer] = useState('');
+  const [answer, setAnswer] = useState('');
   const [showResetConfirm, setShowResetConfirm] = useState(false);
   const [loading, setLoading] = useState({ upload: false, ask: false });
   const [sessionId, setSessionId] = useState(null);
@@ -115,7 +115,11 @@ function App() {
       <header className="app-header">
         <h1>Document AI Assistant</h1>
       </header>
-
+      {answer && (
+  <div className="answer-display">
+    <strong>Answer:</strong> {answer}
+  </div>
+)}
       <UploadSection
         file={file}
         onFileChange={handleFileChange}
