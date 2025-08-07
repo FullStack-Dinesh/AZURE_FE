@@ -10,7 +10,7 @@ function App() {
   const [file, setFile] = useState([]);
   const [uploadMessage, setUploadMessage] = useState('');
   const [query, setQuery] = useState('');
-  const [answer, setAnswer] = useState('');
+  const [setAnswer] = useState('');
   const [showResetConfirm, setShowResetConfirm] = useState(false);
   const [loading, setLoading] = useState({ upload: false, ask: false });
   const [sessionId, setSessionId] = useState(null);
